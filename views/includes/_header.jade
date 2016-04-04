@@ -1,0 +1,24 @@
+div
+	if _path == "/index.html"
+		header.header#header.scrollspy
+			div.container
+				- each sites in records.site.data
+					figure.logo.animated.fadeInDown.delay-07s
+							a(href="#")
+								img(src= sites.logo, alt="")
+					h1.animated.fadeInDown.delay-07s= sites.text
+					ul.we-create.animated.fadeInUp.delay-1s
+						li= sites.description
+
+					a(class="waves-effect waves-light btn-large animated fadeInUp delay-1s", href="#service") Learn More
+
+				ul#cbp-bislideshow.cbp-bislideshow
+					- each sliders in records.slider.slide
+						li
+							img(src= sliders.image, alt= sliders.name)
+
+
+				div#cbp-bicontrols.cbp-bicontrols
+					span.cbp-biprev
+					span.cbp-bipause
+					span.cbp-binext
