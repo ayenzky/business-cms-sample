@@ -25,9 +25,9 @@ module.exports =
       characters: { file: "data/characters.json" }
       site: { file: "data/site.json" }
       slider: { file: "data/slider.json" }
+      news: { file: "data/news.json" }
       client: { file: "data/client.json" }
       partners: { file: "data/partners.json" }
-
     ),
     collections(folder: 'services', layout: 'post'),
     collections(folder: 'featuredwork', layout: 'post'),

@@ -98,3 +98,15 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Image", name: "image", widget: "image", media_folder: "assets/img"}
               - {label: "Name", name: "name", widget: "string"}
+  - name: "items"
+    label: "News"
+    files:
+      - name: "news"
+        label: "News"
+        file: "data/news.json"
+        fields:
+          - label: "News"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "markdown"}
