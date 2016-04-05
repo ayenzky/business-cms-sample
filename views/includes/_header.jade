@@ -1,44 +1,66 @@
-div
-	if _path == "/index.html"
-		header.header#header.scrollspy
-			div.container
-				- each sites in records.site.data
-					figure.logo.animated.fadeInDown.delay-07s
-							a(href="#")
-								img(src= sites.logo, alt="")
-					h1.animated.fadeInDown.delay-07s= sites.name
-					ul.we-create.animated.fadeInUp.delay-1s
-						li= sites.description
 
-					a(class="waves-effect waves-light btn-large animated fadeInUp delay-1s", href="#service") Learn More
+if _path == "/index.html"
+	header.header#header.scrollspy
+		div.container
+			- each sites in records.site.data
+				figure.logo.animated.fadeInDown.delay-07s
+						a(href="#")
+							img(src= sites.logo, alt="")
+				h1.animated.fadeInDown.delay-07s= sites.name
+				ul.we-create.animated.fadeInUp.delay-1s
+					li= sites.description
 
-				ul#cbp-bislideshow.cbp-bislideshow
-					- each sliders in records.slider.slide
+				a(class="waves-effect waves-light btn-large animated fadeInUp delay-1s", href="#service") Learn More
+
+			ul#cbp-bislideshow.cbp-bislideshow
+				- each sliders in records.slider.slide
+					li
+						img(src= sliders.image, alt= sliders.name)
+
+
+			div#cbp-bicontrols.cbp-bicontrols
+				span.cbp-biprev
+				span.cbp-bipause
+				span.cbp-binext
+
+	nav#test.main-nav-outer
+			.container
+				ul.main-nav
+					li
+						a(href='#header') Home
+					li
+						a(href='#service') Services
+					li
+						a(href='#client_outer') Clients
+					li.small-logo
+						a(href='#header')
+							img(src='../img/small-logo2.png', alt='')
+					li
+						a(href='#news') News
+					li
+						a(href='#partners') Partners
+					li
+						a(href='/contact-us') Contact
+				a.res-nav_click(href='#')
+					i.fa-bars
+else if _path != "/index.html"
+	nav#test.main-nav-outer
+				.container
+					ul.main-nav
 						li
-							img(src= sliders.image, alt= sliders.name)
-
-
-				div#cbp-bicontrols.cbp-bicontrols
-					span.cbp-biprev
-					span.cbp-bipause
-					span.cbp-binext
-nav#test.main-nav-outer
-		.container
-			ul.main-nav
-				li
-					a(href='#header') Home
-				li
-					a(href='#service') Services
-				li
-					a(href='#client_outer') Clients
-				li.small-logo
-					a(href='#header')
-						img(src='../img/small-logo2.png', alt='')
-				li
-					a(href='#news') News
-				li
-					a(href='#partners') Partners
-				li
-					a(href='/contact-us') Contact
-			a.res-nav_click(href='#')
-				i.fa-bars
+							a(href='/') Home
+						li
+							a(href='/services/our-services') Services
+						li
+							a(href='#client_outer') Clients
+						li.small-logo
+							a(href='#header')
+								img(src='../img/small-logo2.png', alt='')
+						li
+							a(href='#news') News
+						li
+							a(href='#partners') Partners
+						li
+							a(href='/contact-us') Contact
+					a.res-nav_click(href='#')
+						i.fa-bars
