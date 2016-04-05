@@ -27,6 +27,7 @@ module.exports =
       slider: { file: "data/slider.json" }
       client: { file: "data/client.json" }
       partners: { file: "data/partners.json" }
+
     ),
     collections(folder: 'services', layout: 'post'),
     collections(folder: 'featuredwork', layout: 'post'),
@@ -34,6 +35,7 @@ module.exports =
     js_pipeline(files: 'assets/js/*.coffee'),
     css_pipeline(files: 'assets/css/*.styl')
   ]
+
 
   stylus:
     use: [axis(), rupture(), autoprefixer()]

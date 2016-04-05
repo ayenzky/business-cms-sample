@@ -37,7 +37,7 @@ $(function(){
 		cbpBGSlideshow.init();
 
 		$('.lazy-wrapper').lazyLoader({
-				jsonFile: '../js/data.json',
+				jsonFile: '../data/data.json',
 				mode: 'click',
 				limit: 4,
 				records: 10,
