@@ -1,1 +1,10 @@
-{"data":[{"image":"/img/logo2.png","name":"Welcome To Meg Studios","description":"WE ARE A DIGITAL AGENCY THAT LOVES CRAFTING BEAUTIFUL WEBSITES."}]}
+{
+  "data": [
+    {
+      "image": "/img/logo2.png",
+      "name": "Welcome To Meg Studios",
+      "description": "WE ARE A DIGITAL AGENCY THAT LOVES CRAFTING BEAUTIFUL WEBSITES."
+
+    }
+  ]
+}
