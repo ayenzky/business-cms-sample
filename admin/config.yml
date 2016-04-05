@@ -63,6 +63,28 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Logo", name: "image", widget: "image", media_folder: "assets/img"}
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
+      - name: "client"
+        label: "Testimonial"
+        file: "data/client.json"
+        fields:
+          - label: "Testimonial"
+            name: "data"
+            widget: "list"
+            fields:
+              - {label: "Avatar", name: "image", widget: "image", media_folder: "assets/img"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Work", name: "work", widget: "string"}
+              - {label: "Comment", name: "comment", widget: "string"}
+      - name: "partners"
+        label: "Our Partners"
+        file: "data/partners.json"
+        fields:
+          - label: "Our Partners"
+            name: "data"
+            widget: "list"
+            fields:
+              - {label: "Logo", name: "logo", widget: "image", media_folder: "assets/img/partners"}
+              - {label: "Website", name: "website", widget: "string"}
   - name: "slide"
     label: "Image Slider"
     files:
