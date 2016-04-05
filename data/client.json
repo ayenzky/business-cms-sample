@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "data": [
     {
@@ -14,3 +15,6 @@
     }
   ]
 }
+=======
+{"data":[{"image":"/img/client-pic1.jpg","name":"SaulGoodman","work":"LawlessInc","comment":"Persteadfadf iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."},{"image":"/img/client-pic2.jpg","name":"Marie Schrader","work":"DEA Foundation","comment":"Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."}]}
+>>>>>>> 72cb755e6e91519a7aa9124811c6f6d07f33bc87
