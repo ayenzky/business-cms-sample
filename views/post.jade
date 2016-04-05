@@ -12,8 +12,7 @@ block content
 		.container
 			.row.wow.fadeInUp
 				.col-md-8.row#main-content
-					h2= entry.title
-					p= entry.shortdesc
+					h2.title-header= entry.title
 					!= entry.body
 				.col-md-4#right-sidebar
 					include ./includes/_sidebar.jade
