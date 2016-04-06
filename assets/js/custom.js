@@ -21,6 +21,8 @@ $(window).load(function(){
 		*/
 		event.preventDefault();
 	});
+
+
 })
 
 $(document).ready(function(e) {
@@ -33,6 +35,8 @@ $(document).ready(function(e) {
 });
 
 $(function(){
+
+
 
 		cbpBGSlideshow.init();
 //     $.getJSON('/data/news.json', function(obj){
@@ -68,9 +72,9 @@ $('.lazy-wrapper').lazyLoader({
                   records: 10,
                   offset: 1,
                   isIsotope: true,
-                  isotopeResize: 4
+                  isotopeResize: 4,
 
-      });
+  });
 
 
     var $container = $('.lazy-wrapper');
@@ -80,10 +84,21 @@ $('.lazy-wrapper').lazyLoader({
            animationOptions: {
            duration: 750,
            easing: 'linear',
-           queue: true,
-           class: "loaded"
+           queue: true
          }
       });
+       $('.lazyItem.loaded').find('.card .card-content, .card .card-reveal').each(function(){
+
+   var created = $(this).find('time').attr('date');
+   date = created.split(' ', 4).join(' ');
+
+   var datetobe = moment(date, 'llll');
+   var datemust = datetobe.format('LL');
+
+   $(this).find('time').attr('date', datemust).text(datemust);
+
+})
+
     });
 
   function stripTrailingSlash(str) {
