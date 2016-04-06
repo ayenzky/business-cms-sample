@@ -25,13 +25,25 @@ collections: # A list of collections the CMS should be able to edit
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Categories", name: "categories", widget: "string"}
+  - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "News"  # Used in the UI, ie.: "New Post"
+    folder: "news" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Banner", name: "banner", widget: "image", class: "image featured", media_folder: "assets/img"}
+      - {label: "Short Description", name: "shortdesc", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Categories", name: "categories", widget: "string"}
   - name: "work" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Featured Work"  # Used in the UI, ie.: "New Post"
     folder: "featuredwork" # The path to the folder where the documents are stored
     create: false # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Banner", name: "banner", widget: "image", class: "image featured"}
+      - {label: "Banner", name: "banner", widget: "image", class: "image featured", media_folder: "assets/img"}
       - {label: "Short Description", name: "shortdesc", widget: "string"}
       - {label: "List Services", name: "html", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -63,6 +75,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Logo", name: "image", widget: "image", media_folder: "assets/img"}
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
+              - {label: "Footer", name: "footer", widget: "markdown"}
       - name: "client"
         label: "Testimonial"
         file: "data/client.json"

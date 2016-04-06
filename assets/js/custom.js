@@ -35,30 +35,56 @@ $(document).ready(function(e) {
 $(function(){
 
 		cbpBGSlideshow.init();
+//     $.getJSON('/data/news.json', function(obj){
+//         console.log(obj);
 
-		$('.lazy-wrapper').lazyLoader({
-				jsonFile: '../data/news.json',
-				mode: 'click',
-				limit: 4,
-				records: 10,
-				offset: 1,
-				isIsotope: true,
-				isotopeResize: 4
+//         $.each(obj.items, function(k, val){
 
-		});
+//           console.log(val.image)
+
+//           var items = [];
+
+//           items.push("<div class='col-sm-4 lazyItem'>\
+//             <div class='card'><div class='card-image waves-effect waves-block waves-light'>\
+//             <img class='activator' src=' "+ val.image +"'></div><div class='card-content'>\
+//             <span class='card-title activator grey-text text-darken-4'>"+ val.title +"<i class='material-icons right'>more_vert</i></span>\
+//             <time datetime='"+ val.date +"'>"+ val.date +"</time></div>\
+//             <div class='card-reveal'>\
+//             <span class='card-title grey-text text-darken-4'>"+ val.title +"<i class='material-icons right'>close</i></span>\
+//             <time datetime='"+ val.date +"'>"+ val.date +"</time>\
+//             <p>"+ val.comment +"</p>\
+//             <p class='read-more'><a class='btn waves-effect waves-light' href='/get-your-rating-widget-now'>READ MORE</a></p></div></div></div>")
 
 
-		var $container = $('.lazy-wrapper');
 
-		$container.imagesLoaded( function(){
-			$container.isotope({
-				   animationOptions: {
-			     duration: 750,
-			     easing: 'linear',
-			     queue: false
-			   }
-			});
-		});
+
+//         });
+
+//     });
+$('.lazy-wrapper').lazyLoader({
+
+                  mode: 'click',
+                  limit: 4,
+                  records: 10,
+                  offset: 1,
+                  isIsotope: true,
+                  isotopeResize: 4
+
+      });
+
+
+    var $container = $('.lazy-wrapper');
+
+    $container.imagesLoaded( function(){
+      $container.isotope({
+           animationOptions: {
+           duration: 750,
+           easing: 'linear',
+           queue: true,
+           class: "loaded"
+         }
+      });
+    });
 
   function stripTrailingSlash(str) {
     if(str.substr(-1) == '/') {
