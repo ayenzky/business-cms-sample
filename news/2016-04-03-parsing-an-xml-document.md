@@ -1,12 +1,19 @@
 ---
-title:  "Parsing An XML Document"
-date:   2016-04-06
+title: Parsing An XML Document
+banner: /img/article1.jpg
 shortdesc: Here is some more information about this product that is only revealed once clicked on.
+<<<<<<< HEAD
 banner: /img/article1.jpg
 categories:
 - technology
 - food
+=======
+cmsUserSlug: parsing-an-xml-document
+date: 2016-04-05 
+categories: "technology,food"
+>>>>>>> 343fa90a3cb6e3b6b7bc39acb24fec40590ef94c
 ---
+
 [Finn](http://adventuretime.wikia.com/wiki/Finn) and [Jake](http://adventuretime.wikia.com/wiki/Jake) hitch a ride on a Citadel Guardian after he imprisons and transports [The Lich](http://adventuretime.wikia.com/wiki/The_Lich_(character)) to the Citadel. Upon arrival, the Guardian attaches The Lich's crystal prison onto a much larger crystal "cell block." Finn then says it is a good riddance for The Lich.<!--more--> As they talk, The Lich begins emitting a gray breath in his cell which the duo don't notice. Finn and Jake then look around for Finn's long-lost father, whom Finn initially suggests might be a Guardian. Jake points out a strange looking "old kid" who resembles Finn, and it turns out to be Finn's father incarcerated inside a crystal jail cell.
 
 Finn runs to his dad and looks him closely. A gray slime fire forms on Finn's father's cell, which makes Finn hyper about it and asks Jake about the fire. Jake then points above from where the fire had fallen on the cell. They then notice that the Lich's cell is excreting a gray slime that is beginning to infect the other prisoners and making them under the influence of The Lich. The cell of Finn's father then melts and his father half inside the cell asks Finn for help. Finn uses Jake as flail to break him out of the cell. The Lich's influence over the Citadel enables a massive jailbreak. 
