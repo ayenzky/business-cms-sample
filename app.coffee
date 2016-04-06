@@ -17,7 +17,7 @@ module.exports =
     postExcerpt: (html, length, ellipsis) ->
       excerpt.text(html, length || 100, ellipsis || '...')
     dateFormat: (date, format) ->
-      moment(date).format(format)
+      moment(date).format('ll')
 
 
   extensions: [
