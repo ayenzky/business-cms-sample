@@ -2,7 +2,7 @@
 title:  "Materialize"
 date:   2016-04-06
 shortdesc: Here is some more information about this product that is only revealed once clicked on.
-banner: "/img/article2.jpg"
+banner: /img/article2.jpg
 categories:
 - technology
 - food

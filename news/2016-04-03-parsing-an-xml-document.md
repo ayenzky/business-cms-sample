@@ -2,7 +2,7 @@
 title:  "Parsing An XML Document"
 date:   2016-04-06
 shortdesc: Here is some more information about this product that is only revealed once clicked on.
-banner: /img/article4.jpg
+banner: /img/article1.jpg
 categories:
 - technology
 - food

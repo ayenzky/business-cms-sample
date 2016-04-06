@@ -75,7 +75,7 @@ block append content
 			h6 Proin iaculis purus consequat sem cure digni ssim.
 			.row
 				div.lazy-wrapper.wow.fadeInUp.delay-0s
-					each newss in news.sort('date', 'asc')
+					each newss in news.orderBy('date', 'asc').slice(0, 4)
 						.col-sm-4.lazyItem
 							.card
 								.card-image.waves-effect.waves-block.waves-light
