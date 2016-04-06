@@ -23,25 +23,25 @@ html
 
     base(href="/admin/")
   body
-    script(type="text/x-handlebars" data-template-name='cms/preview/news').
-      <div id="main-wrapper">
-        <div class="container">
-          <!--Content-->
-          <article class="box post">
-            {{#if entry.banner }}
-            {{cms-preview field='banner'}}
-            {{/if}}
-            <header>
-              <h2>{{ entry.title }}</h2>
-              {{cms-preview field="html"}}
-              <p>{{time-format entry.date "ll"}}</p>
-              <p>{{ entry.shortdesc}}</p>
+    //- script(type="text/x-handlebars" data-template-name='cms/preview/news').
+    //-   <div id="main-wrapper">
+    //-     <div class="container">
+    //-       <!--Content-->
+    //-       <article class="box post">
+    //-         {{#if entry.banner }}
+    //-         {{cms-preview field='banner'}}
+    //-         {{/if}}
+    //-         <header>
+    //-           <h2>{{ entry.title }}</h2>
+    //-           {{cms-preview field="html"}}
+    //-           <p>{{time-format entry.date "ll"}}</p>
+    //-           <p>{{ entry.shortdesc}}</p>
 
-            </header>
-            {{cms-preview field='body'}}
-          </article>
-        </div>
-      </div>
+    //-         </header>
+    //-         {{cms-preview field='body'}}
+    //-       </article>
+    //-     </div>
+    //-   </div>
 
     //- script(type="text/x-handlebars" data-template-name='cms/preview/characters').
     //-   <div id="main-wrapper">

@@ -28,6 +28,9 @@ module.exports =
       news: { file: "data/news.json" }
       client: { file: "data/client.json" }
       partners: { file: "data/partners.json" }
+      footer: { file: "data/footer.json" }
+      sidebar: { file: "data/sidebar.json" }
+
     ),
     collections(folder: 'services', layout: 'post'),
     collections(folder: 'featuredwork', layout: 'post'),

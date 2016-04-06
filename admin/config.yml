@@ -112,14 +112,26 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Image", name: "image", widget: "image", media_folder: "assets/img"}
               - {label: "Name", name: "name", widget: "string"}
   - name: "items"
-    label: "News"
+    label: "Footer"
     files:
-      - name: "news"
-        label: "News"
-        file: "data/news.json"
+      - name: "footer"
+        label: "Footer"
+        file: "data/footer.json"
         fields:
-          - label: "News"
+          - label: "Footer"
             name: "items"
             widget: "list"
             fields:
-              - {label: "News", name: "html", widget: "markdown"}
+              - {label: "News", name: "name", widget: "string"}
+    - name: "items"
+      label: "Sidebar"
+      files:
+        - name: "sidebar"
+          label: "Sidebar"
+          file: "data/sidebar.json"
+          fields:
+            - label: "Sidebar"
+              name: "items"
+              widget: "list"
+              fields:
+                - {label: "News", name: "name", widget: "string"}
