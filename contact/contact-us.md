@@ -3,8 +3,6 @@ title: Contact Us
 shortdesc: "For more information about our services you can contact us through our form below."
 ---
 
-<h2 class="title-header">Contact Us</h2>
-<p class="padding-b">For more information about our services you can contact us through our form below.</p>
 <form name="contact-form" method="POST" action="thank-you-page" netlify="netlify">
 <input type="hidden" name="subject" value="Online Enquiries"/>
 <div class="row">
