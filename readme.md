@@ -6,7 +6,7 @@ It's based on Brian Rinaldi's great [Static Site Samples](https://github.com/rem
 
 ## Setting up
 
-Make sure to install the [netlify-git-api](https://github.com/ayenzky/business-cms-sample.git) before you start.
+Make sure to install the [netlify-git-api](https://github.com/netlify/netlify-git-api) before you start.
 
 Then:
 
