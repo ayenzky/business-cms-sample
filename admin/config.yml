@@ -18,6 +18,7 @@ collections: # A list of collections the CMS should be able to edit
       - name: "site-data"
         label: "Site"
         file: "data/site.json"
+        description: "site setting"
         fields:
           - label: "Site"
             name: "site-data"
@@ -38,6 +39,7 @@ collections: # A list of collections the CMS should be able to edit
       - name: "slider"
         label: "Image Slide"
         file: "data/slider.json"
+        description: "image slider"
         fields:
           - label: "Image Slide"
             name: "slide"
@@ -77,7 +79,6 @@ collections: # A list of collections the CMS should be able to edit
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Categories", name: "categories", widget: "string"}
-
   - name: "contactus" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Contact Form"  # Used in the UI, ie.: "New Post"
     folder: "contact" # The path to the folder where the documents are stored
@@ -92,6 +93,7 @@ collections: # A list of collections the CMS should be able to edit
       - name: "client"
         label: "Testimonial"
         file: "data/client.json"
+        description: "client testimonial"
         fields:
           - label: "Testimonial"
             name: "data"
@@ -104,6 +106,7 @@ collections: # A list of collections the CMS should be able to edit
       - name: "partners"
         label: "Our Partners"
         file: "data/partners.json"
+        description: "partners logo"
         fields:
           - label: "Our Partners"
             name: "data"
@@ -111,13 +114,13 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Logo", name: "logo", widget: "image", media_folder: "assets/img/partners"}
               - {label: "Website", name: "website", widget: "string"}
-
   - name: "footeritems"
-    label: "Footer"
+    label: "Contact Section"
     files:
       - name: "footeritems"
-        label: "Footer"
+        label: "Contat Section"
         file: "data/footer.json"
+        description: "contact info"
         fields:
           - label: "Footer"
             name: "footeritems"
@@ -130,6 +133,7 @@ collections: # A list of collections the CMS should be able to edit
       - name: "sidebar"
         label: "Sidebar"
         file: "data/sidebar.json"
+        description: "side bar"
         fields:
           - label: "Sidebar"
             name: "items"
