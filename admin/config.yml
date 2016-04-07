@@ -12,6 +12,39 @@ media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 public_folder: "assets"
 
 collections: # A list of collections the CMS should be able to edit
+  - name: "site-data"
+    label: "Site Setting"
+    files:
+      - name: "site-data"
+        label: "Site"
+        file: "data/site.json"
+        fields:
+          - label: "Site"
+            name: "site-data"
+            widget: "list"
+            fields:
+              - {label: "Site Logo", name: "logo", widget: "image", media_folder: "assets/img"}
+              - {label: "Site name", name: "sitename", widget: "string"}
+              - {label: "Website Description", name: "metadesc", widget: "string"}
+              - {label: "Keywords", name: "metakeyword", widget: "string"}
+              - {label: "Favicon", name: "icon", widget: "image", media_folder: "assets/img"}
+              - {label: "Slider Logo", name: "sliderlogo", widget: "image", media_folder: "assets/img"}
+              - {label: "Slider Text", name: "slidertxt", widget: "string"}
+              - {label: "Slider Description", name: "sliderdesc", widget: "string"}
+              - {label: "Footer", name: "footer", widget: "markdown"}
+  - name: "slide"
+    label: "Image Slider"
+    files:
+      - name: "slider"
+        label: "Image Slide"
+        file: "data/slider.json"
+        fields:
+          - label: "Image Slide"
+            name: "slide"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image", media_folder: "assets/img"}
+              - {label: "Name", name: "name", widget: "string"}
   - name: "services" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Services"  # Used in the UI, ie.: "New Post"
     folder: "services" # The path to the folder where the documents are stored
@@ -22,9 +55,16 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Short Description", name: "shortdesc", widget: "string"}
       - {label: "List Services", name: "html", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Categories", name: "categories", widget: "string"}
+  - name: "work" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Featured Work"  # Used in the UI, ie.: "New Post"
+    folder: "featuredwork" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Banner", name: "banner", widget: "image", class: "image featured", media_folder: "assets/img"}
+      - {label: "Short Description", name: "shortdesc", widget: "string"}
+      - {label: "List Services", name: "html", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "News"  # Used in the UI, ie.: "New Post"
     folder: "news" # The path to the folder where the documents are stored
@@ -37,19 +77,7 @@ collections: # A list of collections the CMS should be able to edit
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Categories", name: "categories", widget: "string"}
-  - name: "work" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Featured Work"  # Used in the UI, ie.: "New Post"
-    folder: "featuredwork" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Banner", name: "banner", widget: "image", class: "image featured", media_folder: "assets/img"}
-      - {label: "Short Description", name: "shortdesc", widget: "string"}
-      - {label: "List Services", name: "html", widget: "markdown"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Categories", name: "categories", widget: "string"}
+
   - name: "contactus" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Contact Form"  # Used in the UI, ie.: "New Post"
     folder: "contact" # The path to the folder where the documents are stored
@@ -59,31 +87,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Short Description", name: "shortdesc", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "data"
-    label: "Data"
+    label: "Others"
     files:
-      - name: "characters"
-        label: "Characters"
-        file: "data/characters.json"
-        fields:
-          - label: "Characters"
-            name: "data"
-            widget: "list"
-            fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Image", name: "image", widget: "image", media_folder: "assets/img"}
-              - {label: "Description", name: "description", widget: "string"}
-      - name: "site"
-        label: "Site"
-        file: "data/site.json"
-        fields:
-          - label: "Site"
-            name: "data"
-            widget: "list"
-            fields:
-              - {label: "Logo", name: "image", widget: "image", media_folder: "assets/img"}
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Description", name: "description", widget: "string"}
-              - {label: "Footer", name: "footer", widget: "markdown"}
       - name: "client"
         label: "Testimonial"
         file: "data/client.json"
@@ -106,28 +111,16 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Logo", name: "logo", widget: "image", media_folder: "assets/img/partners"}
               - {label: "Website", name: "website", widget: "string"}
-  - name: "slide"
-    label: "Image Slider"
-    files:
-      - name: "slider"
-        label: "Image Slide"
-        file: "data/slider.json"
-        fields:
-          - label: "Image Slide"
-            name: "slide"
-            widget: "list"
-            fields:
-              - {label: "Image", name: "image", widget: "image", media_folder: "assets/img"}
-              - {label: "Name", name: "name", widget: "string"}
-  - name: "items"
+
+  - name: "footeritems"
     label: "Footer"
     files:
-      - name: "footer"
+      - name: "footeritems"
         label: "Footer"
         file: "data/footer.json"
         fields:
           - label: "Footer"
-            name: "items"
+            name: "footeritems"
             widget: "list"
             fields:
               - {label: "News", name: "html", widget: "markdown"}

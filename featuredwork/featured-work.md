@@ -4,8 +4,6 @@ banner: /img/iphone.png
 shortdesc: "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit."
 html: "<div class=\"service-list\">\n  <div class=\"service-list-col1\"><i class=\"fa-paw\"></i></div>\n  <div class=\"service-list-col2\">\n    <h5>branding &amp; identity</h5>\n    <p>Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>\n  </div>\n</div>\n<div class=\"service-list\">\n  <div class=\"service-list-col1\"><i class=\"fa-gear\"></i></div>\n  <div class=\"service-list-col2\">\n    <h5>web development</h5>\n    <p>Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .</p>\n  </div>\n</div>\n<div class=\"service-list\">\n  <div class=\"service-list-col1\"><i class=\"fa-apple\"></i></div>\n  <div class=\"service-list-col2\">\n    <h5>mobile design</h5>\n    <p>Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.</p>\n  </div>\n</div>\n<div class=\"service-list\">\n  <div class=\"service-list-col1\"><i class=\"fa-medkit\"></i></div>\n  <div class=\"service-list-col2\">\n    <h5>24/7 Support</h5>\n    <p>Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.</p>\n  </div>\n</div>"
 cmsUserSlug: our-services
-date: 2014-04-21T10:33:56.000Z
-categories: season6 episodes
 ---
 
 <h4 class="sub-header">Magic of Theme Development</h4>

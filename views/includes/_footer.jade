@@ -1,5 +1,5 @@
 section#contact
-  each footertxt in records.footer.items
+  each footertxt in records.footer.footeritems
     != footertxt.html
   //- .container
   //-   .row
@@ -74,4 +74,4 @@ section#contact
   .container.footer
       .row
         .col-lg-12
-          p= records.site.data[0].footer
+          p= records.site.sitedata[0].footer
