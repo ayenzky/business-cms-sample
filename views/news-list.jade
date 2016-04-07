@@ -12,6 +12,7 @@ block content
     .container
       .row.wow.fadeInUp
         .col-md-8.row#main-content
+          h2.title-header List of News
           each newss in news.sort('date', 'asc')
             div.content-list
               h5.title-header= newss.title
