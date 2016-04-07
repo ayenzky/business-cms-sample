@@ -14,7 +14,7 @@ block content
         .col-md-8.row#main-content
           each newss in news.sort('date', 'asc')
             div.content-list
-              h2.title-header= newss.title
+              h5.title-header= newss.title
               div.content-body
                 p= newss.shortdesc
                 p.right-align
