@@ -12,22 +12,23 @@ media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 public_folder: "assets"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "site-data"
+  - name: "sitedata"
     label: "Site Setting"
     files:
-      - name: "site-data"
+      - name: "sitedata"
         label: "Site"
         file: "data/site.json"
         description: "site setting"
         fields:
           - label: "Site"
-            name: "site-data"
+            name: "sitedata"
             widget: "list"
             fields:
               - {label: "Site Logo", name: "logo", widget: "image", media_folder: "assets/img"}
               - {label: "Site name", name: "sitename", widget: "string"}
               - {label: "Website Description", name: "metadesc", widget: "string"}
               - {label: "Keywords", name: "metakeyword", widget: "string"}
+              - {label: "Author", name: "metauthor", widget: "string"}
               - {label: "Favicon", name: "icon", widget: "image", media_folder: "assets/img"}
               - {label: "Slider Logo", name: "sliderlogo", widget: "image", media_folder: "assets/img"}
               - {label: "Slider Text", name: "slidertxt", widget: "string"}
