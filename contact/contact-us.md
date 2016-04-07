@@ -1,6 +1,8 @@
 ---
 title: Contact Us
-shortdesc: "For more information about our services you can contact us through our form below."
+shortdesc: For more information about our services you can contact us through our form below.
+cmsUserSlug: contact-us
+date: now
 ---
 
 <form name="contact-form" method="POST" action="thank-you-page" netlify="netlify">
